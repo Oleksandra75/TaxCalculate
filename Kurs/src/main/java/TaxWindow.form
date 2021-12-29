@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="TaxWindow">
+  <grid id="27dc6" binding="MainWin" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1235" height="539"/>
+    </constraints>
+    <properties>
+      <background color="-1051436"/>
+      <maximumSize width="970" height="350"/>
+      <minimumSize width="970" height="350"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="9e5ac" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="3" row-span="4" col-span="1" vsize-policy="2" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3753015"/>
+          <foreground color="-16777216"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e2120" class="javax.swing.JButton" binding="chooseTableButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="170" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-16777216"/>
+              <text value="Вибрати таблицю"/>
+            </properties>
+            <clientProperties>
+              <html.disable class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="eb9ea" class="javax.swing.JButton" binding="calculateTaxButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-10724305"/>
+              <text value="Обрахувати"/>
+            </properties>
+          </component>
+          <component id="ad1c" class="javax.swing.JButton" binding="enterIntoTableButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-10724305"/>
+              <text value="Ввести"/>
+            </properties>
+          </component>
+          <component id="e3e78" class="javax.swing.JButton" binding="saveToDatabaseButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-10724305"/>
+              <text value="Зберегти"/>
+            </properties>
+          </component>
+          <vspacer id="c702e">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="cfbe3" class="javax.swing.JButton" binding="deleteFromTableButton">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-10724305"/>
+              <text value="Видалити"/>
+            </properties>
+          </component>
+          <component id="5b96" class="javax.swing.JButton" binding="exitProgramButton">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8226"/>
+              <enabled value="true"/>
+              <foreground color="-16777216"/>
+              <text value="Вийти"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </grid>
+      <component id="70a5c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="28" height="31"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Назва таблиці"/>
+        </properties>
+      </component>
+      <component id="2873" class="javax.swing.JTextField" binding="tableName">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="taxation"/>
+        </properties>
+      </component>
+      <component id="eef9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Сумарний дохід"/>
+        </properties>
+      </component>
+      <component id="6be50" class="javax.swing.JLabel" binding="SumLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="0.0"/>
+        </properties>
+      </component>
+      <grid id="a9f0d" layout-manager="GridLayoutManager" row-count="10" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="2" row-span="4" col-span="1" vsize-policy="2" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-8347479"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c970b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="287" height="31"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Тип податку"/>
+            </properties>
+          </component>
+          <component id="22fcd" class="javax.swing.JComboBox" binding="taxTypeChoose">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="заробітна плата"/>
+                <item value="подарунок"/>
+                <item value="фінансова допомога"/>
+                <item value="податкові пільги з дітей"/>
+                <item value="нерухомість"/>
+                <item value="переказ з-за кордону"/>
+              </model>
+            </properties>
+          </component>
+          <component id="c6643" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Відсоток податку"/>
+            </properties>
+          </component>
+          <component id="c3232" class="javax.swing.JTextField" binding="taxPercentTextField">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+          <component id="c9556" class="javax.swing.JLabel" binding="incomeLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Заробіток"/>
+            </properties>
+          </component>
+          <component id="d998c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Податок"/>
+            </properties>
+          </component>
+          <component id="51b1f" class="javax.swing.JTextField" binding="incomeTextField">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="true"/>
+            </properties>
+          </component>
+          <component id="7e505" class="javax.swing.JTextField" binding="taxTextField">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+          <component id="3e7fa" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Оподаткований дохід"/>
+            </properties>
+          </component>
+          <component id="96003" class="javax.swing.JTextField" binding="disposableIncomeTextField">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="378" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+          <component id="70f9" class="javax.swing.JTextField" binding="optionalTextField">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <visible value="false"/>
+            </properties>
+          </component>
+          <component id="e0d39" class="javax.swing.JLabel" binding="optionalLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="75" height="-1"/>
+                <maximum-size width="170" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <text value="Label"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="6da7f" class="javax.swing.JTable" binding="accessTable">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="305" height="50"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
